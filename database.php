@@ -10,7 +10,7 @@ $database = 'auth';
 try {
 	$connection = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
 } catch (PDOException $error) {
-	die( "Connection falied: " . $e->getMessage());
+	die( "Connection falied: " . $error->getMessage());
 }
 
 ?>
